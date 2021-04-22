@@ -1,0 +1,18 @@
+Opções BD
+
+1-driver nativo
+
+2-query builders (vantagem em relacao aos drivers de bd nativos)
+(ao mudar de bd no meio do projeto, facilita a mudança, com um driver nativo teria que mudar tudo)
+(alem de nao precisar escrever as queries completas)
+
+3-frameworks ORM (object relational maper)
+typeORM e sequelize
+
+temos uma entidade(uma classe, um model)
+e uma tabela no bd
+
+esse framework conecta a tabela com o objeto dentro da aplicação
+fazendo o mapeamento da aplicacao com o bd
+
+se precisarmos fazer algo mais na mao, o typeORM oferece uma opção de querybuilder

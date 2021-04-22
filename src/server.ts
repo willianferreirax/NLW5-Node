@@ -1,6 +1,11 @@
 import express from "express";
+import './database'; // o javascript detecta que queremos o index
+import {routes} from "./routes";
 
 const app = express();
+
+app.use(express.json);
+app.use(routes);
 
 /**
  * 
@@ -10,11 +15,6 @@ const app = express();
  * DELETE = deletar
  * PATCH = Alterar uma informaçao especifica (somente uma informaçao: exemplo: senha de usuario)
  * 
- * 
  */
-
-app.get('/', (req, res) =>{
-    return res.send("olá NLW 05")
-})
 
 app.listen(3333, () => console.log("Server is running on port: 3333"));
